@@ -1,0 +1,2 @@
+rootProject.name = "KT_Snackbar"
+include ':app'
