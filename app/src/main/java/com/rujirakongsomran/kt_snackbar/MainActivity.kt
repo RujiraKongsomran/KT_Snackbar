@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             )
             mySnackBar.setAction(R.string.undo_string, MyUndoListener())
             mySnackBar.setActionTextColor(Color.BLUE)
+            mySnackBar.setMaxInlineActionWidth(50)
             mySnackBar.show()
         }
     }
