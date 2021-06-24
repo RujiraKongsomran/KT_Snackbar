@@ -1,5 +1,6 @@
 package com.rujirakongsomran.kt_snackbar
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
                 Snackbar.LENGTH_INDEFINITE
             )
             mySnackBar.setAction(R.string.undo_string, MyUndoListener())
+            mySnackBar.setActionTextColor(Color.BLUE)
             mySnackBar.show()
         }
     }
