@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">KT_Snackbar</string>
+    <string name="undo_string">undo</string>
 </resources>

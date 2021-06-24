@@ -15,12 +15,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener {
-            Snackbar.make(
+            val mySnackBar = Snackbar.make(
                 it,
                 "When you click on the “Show Snackbar” button, a Snackbar appears at the bottom of the screen.",
-                Snackbar.LENGTH_SHORT
+                Snackbar.LENGTH_INDEFINITE
             )
-                .show()
+            mySnackBar.setAction(R.string.undo_string, MyUndoListener())
+            mySnackBar.show()
         }
     }
 }
