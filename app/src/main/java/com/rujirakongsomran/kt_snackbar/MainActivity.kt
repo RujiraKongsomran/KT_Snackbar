@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             mySnackBar.setAction(R.string.undo_string, MyUndoListener())
             mySnackBar.setActionTextColor(Color.BLUE)
             mySnackBar.setMaxInlineActionWidth(50)
+            mySnackBar.anchorView = binding.button2
             mySnackBar.show()
         }
     }
